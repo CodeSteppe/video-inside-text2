@@ -10,22 +10,25 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
+  font-family: "Bebas Neue", cursive;
 }
 
-.video-text{
+.video-text {
   display: grid;
   place-items: center;
   width: 100%;
   height: 100%;
-  color: #fff;
+  /* 
+    黑色 x 任何颜色 = 黑色 
+    白色 x 任何颜色 = 白色
+  */
   background-color: #000;
+  color: #fff;
   mix-blend-mode: multiply;
-
 }
 
 h1 {
   font-size: 50vh;
-  font-family: "Bebas Neue", cursive;
   animation-name: zoomIn;
   animation-duration: 10s;
   animation-delay: 3s;
