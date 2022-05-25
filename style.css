@@ -28,8 +28,26 @@ body {
 }
 
 h1 {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  line-height: 100vh;
+  /* 
+    黑色 x 任何颜色 = 黑色 
+    白色 x 任何颜色 = 白色
+  */
+  /* background-color: #000;
+  color: #fff;
+  mix-blend-mode: multiply; */
+  /* 
+    黑色 + 任何颜色 = 任何颜色 
+    白色 + 任何颜色 = 白色
+  */
+  background-color: #fff;
+  color: #000;
+  mix-blend-mode: screen;
   font-size: 50vh;
-  animation-name: zoomIn;
+  /* animation-name: zoomIn; */
   animation-duration: 10s;
   animation-delay: 3s;
   animation-timing-function: ease-in-out;
@@ -51,6 +69,7 @@ video {
   from {
     transform: translateX(0) scale(100%);
   }
+
   to {
     transform: translateX(4.7%) scale(3000%);
   }
